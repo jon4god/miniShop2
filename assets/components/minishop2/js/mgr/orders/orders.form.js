@@ -287,7 +287,8 @@ Ext.extend(miniShop2.panel.OrdersForm, MODx.FormPanel, {
               const elem_width = elem.parent().getWidth();
               const text_width = val.length * text_size * .6;
                 if (text_width > elem_width) {
-                    for (let m = text_size; m >= 10; m--) {
+                    let m;
+                    for (m = text_size; m >= 10; m--) {
                         if ((val.length * m * .6) < elem_width) {
                             break;
                         }
